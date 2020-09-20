@@ -26,7 +26,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", (request, response) => {
-  response.send(db.users);
+  response.send("its is working!");
 });
 
 app.post("/signin", (request, response) => {
